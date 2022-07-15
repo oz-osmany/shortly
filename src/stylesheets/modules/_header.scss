@@ -1,0 +1,66 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    &__login{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+        @include Small{
+            display: none;
+        }
+    }
+    &__logo{
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 15px;
+        @include Small{
+            font-size: 35px;
+            
+        }
+    }    
+    &__menu{
+        display: flex;
+        padding-left: 0;
+        @include Small{
+            display: none;
+        }
+    }
+    &__menu_completo{
+        display: flex;
+        padding-left: 0;
+       
+    }
+    &__subtitle{
+        color: $gray;
+        font-size: 15px;
+        margin-top: 0;
+        width: 400px;
+        @include Small{
+            font-size: 18px;
+            margin-top: 20px;
+            text-align: center;
+            width: 320px;
+        }
+    }
+    &__title{
+        font-family: "Poppins";
+        font-size: 50px;
+        font-weight: 700;    
+        margin-bottom: 0;
+        line-height: 1.1;
+        @include Small{
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+    li{
+        padding-left: 15px;
+        list-style: none;
+    }
+    a{
+        text-decoration: none; 
+        font-size: 13px;     
+    }
+
+}

@@ -1,0 +1,90 @@
+.principal{
+    background-color: $grayishViolet;
+    margin-top: -50px;
+    &__body{
+        background-color: $lightViolet;
+        height: 200px;
+    }
+    &__boost{
+        background-image: url("../images/bg-boost-desktop.svg");
+
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+    }
+    &__boost_buttom{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    &__header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 120px;
+        @include Small{
+            padding-top: 100px;
+        }
+        
+    }
+    
+    &__middle{
+        align-items: center;
+        background-color: $darkBlue;
+        border-radius: 5px;
+        display: flex;
+        height: 100px;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        @include Small{
+            flex-direction: column;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+    }   
+    &__title{
+        text-align: center;
+        margin: auto;
+        @include Small{
+            font-size: 15px;
+        }
+       
+    }
+    &__title--boost{
+        color: white;
+        padding-top: 40px;
+        font-size: 25px;
+        font-family: "Poppins";
+        
+    }
+    &__subtitle{
+        text-align: center;
+        color: $gray;
+        display: flex;
+        justify-content: center;
+        p{
+            width: 535px;
+            @include Small{
+                font-size: 15px;
+                margin-top: -13px;
+            }
+        }
+    }
+    input{
+        border-radius: 5px;
+        // border-color: $red;
+        height: 40px;
+        margin-right: 15px;
+        width: 900px;
+        @include Small{
+            width: 90%;
+            margin-right: 0;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+    }
+    
+}

@@ -1,0 +1,100 @@
+.container{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    @include Small{
+        width: 375px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    padding: 0;
+    &__banner{
+        background-color: white;
+        height: 600px;
+        width: 100%;
+        margin-top: 0;
+        display: block;
+        @include Small{
+            height: 900px;
+        }
+    }
+    &__imagen{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;        
+        overflow: hidden;
+        @include Small{
+            justify-content: center;
+        }
+    }
+    &__imagen_buro{
+        width: 600px;
+        transform: translateX(120px);
+        @include Small{
+            width: 500px;
+            transform: translateX(50px);
+        }
+    }
+    &__info{
+        width: 500px;
+        @include Small{
+             width: 100%;
+             display:flex;
+             flex-direction: column;
+             margin-top: 30px;
+             
+        }
+    }
+    &__info_title{
+        width: 500px;
+        display: flex;
+        justify-content: center;
+    }
+    &__info_title_row{
+        display: flex;
+        
+        
+    }
+    &__inner{
+        // padding-left: 10%;
+        // padding-right: 10%;
+        width: 1152px;
+        margin-left: 10%;
+        margin-right: 10%;
+        @include Small{
+            width:320px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__inner--left{
+        margin-right: 0;
+        margin-left: 10%;
+        width: 90%;
+        @include Small{
+            margin-left: 5%;
+        }
+
+    }
+    &__inner--middle{
+        position: relative;
+        // transform: translateY(-50px);
+    }
+    &__row{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        flex-direction: row-reverse;
+        @include Small{
+            
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+   
+}
+// main{
+//     background-color: $red;
+//     display: block;
+//     margin-top: -20px;
+// }

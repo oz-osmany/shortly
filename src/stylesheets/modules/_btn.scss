@@ -1,0 +1,25 @@
+.btn{
+    background-color: $cyan;
+    border-color: transparent;
+    border-radius: 40px;   
+    color:white ;
+    height: 30px;
+    width: 80px;
+
+    &--transparent{
+        background-color: transparent;
+        border:0;
+    }
+    &--large{
+        width: 110px;
+    }
+    &--squart{
+        border-radius: 5px; 
+        height: 40px;
+        width: 110px;
+        @include Small{
+            width: 296px;
+            margin-bottom: 10px;
+        }
+    }
+}
